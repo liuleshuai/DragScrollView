@@ -5,17 +5,16 @@
 
 ## Gradle
 ```
-	allprojects {
-		repositories {
-			...
-			maven { url 'https://jitpack.io' }
-		}
+allprojects {
+	repositories {
+		...
+		maven { url 'https://jitpack.io' }
 	}
+}
  
- 	dependencies {
-	        compile 'com.github.liuleshuai:DragScrollView:1.1'
-	}
-
+dependencies {
+	compile 'com.github.liuleshuai:DragScrollView:1.1'
+}
 ```
 
 ## 布局中使用
