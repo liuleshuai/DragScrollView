@@ -1,4 +1,4 @@
-package com.liukuo.dragscrollview;
+package com.example.draglibrary;
 
 import android.content.Context;
 import android.util.AttributeSet;

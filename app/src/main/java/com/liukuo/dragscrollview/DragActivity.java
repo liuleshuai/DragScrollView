@@ -1,8 +1,12 @@
 package com.liukuo.dragscrollview;
 
+import android.os.Bundle;
 import android.os.Handler;
 import android.support.v7.app.AppCompatActivity;
-import android.os.Bundle;
+
+import com.example.draglibrary.DragListener;
+import com.example.draglibrary.InnerScrollView;
+import com.example.draglibrary.OuterLayout;
 
 import butterknife.BindView;
 import butterknife.ButterKnife;

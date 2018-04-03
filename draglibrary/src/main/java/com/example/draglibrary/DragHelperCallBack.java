@@ -1,4 +1,4 @@
-package com.liukuo.dragscrollview;
+package com.example.draglibrary;
 
 import android.support.v4.widget.ViewDragHelper;
 import android.view.View;

@@ -1,4 +1,4 @@
-package com.liukuo.dragscrollview;
+package com.example.draglibrary;
 
 /**
  * Created by LiuKuo at 2018/4/3
