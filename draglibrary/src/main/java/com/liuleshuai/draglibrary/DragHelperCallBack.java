@@ -1,4 +1,4 @@
-package com.example.draglibrary;
+package com.liuleshuai.draglibrary;
 
 import android.support.v4.widget.ViewDragHelper;
 import android.view.View;

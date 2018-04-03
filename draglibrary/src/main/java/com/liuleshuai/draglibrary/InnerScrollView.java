@@ -1,4 +1,4 @@
-package com.example.draglibrary;
+package com.liuleshuai.draglibrary;
 
 import android.content.Context;
 import android.util.AttributeSet;

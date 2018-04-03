@@ -1,4 +1,4 @@
-package com.example.draglibrary;
+package com.liuleshuai.draglibrary;
 
 import android.content.Context;
 import android.content.res.TypedArray;
@@ -37,6 +37,10 @@ public class OuterLayout extends LinearLayout {
      * 关闭窗口的下拉比例
      */
     private float radio;
+    /**
+     * 下拉缩小比例
+     */
+    private float minRadio;
 
     public OuterLayout(Context context) {
         this(context, null);
@@ -54,8 +58,9 @@ public class OuterLayout extends LinearLayout {
     }
 
     private void init(Context context, AttributeSet attrs) {
-        TypedArray a = context.obtainStyledAttributes(attrs, R.styleable.dray_scrollview);
-        radio = a.getFloat(R.styleable.dray_scrollview_dray_radio, 0.5f);
+        TypedArray a = context.obtainStyledAttributes(attrs, R.styleable.OuterLayout);
+        radio = a.getFloat(R.styleable.OuterLayout_dray_radio, 0.5f);
+        minRadio = a.getFloat(R.styleable.OuterLayout_dray_down_dimen, 0.8f);
         a.recycle();
     }
 
@@ -161,9 +166,10 @@ public class OuterLayout extends LinearLayout {
      * @param top 距顶部距离
      */
     public void changeSize(int top) {
-        if (listener != null) {
-            listener.changeSize(top);
-        }
+        float radio = 1 - ((float) top) / this.getRootView().getHeight();
+        float scale = Math.max(radio, minRadio);
+        dragView.setScaleX(scale);
+        dragView.setScaleY(scale);
     }
 
     public void setDragListener(DragListener listener) {

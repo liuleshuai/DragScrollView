@@ -1,6 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <declare-styleable name="dray_scrollview">
+    <declare-styleable name="OuterLayout">
+        <!--下拉触发close的比例-->
         <attr name="dray_radio" format="float" />
+        <!--下拉边框缩小的比例-->
+        <attr name="dray_down_dimen" format="float" />
     </declare-styleable>
 </resources>
