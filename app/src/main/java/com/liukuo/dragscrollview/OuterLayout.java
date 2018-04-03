@@ -1,6 +1,7 @@
 package com.liukuo.dragscrollview;
 
 import android.content.Context;
+import android.content.res.TypedArray;
 import android.support.v4.view.ViewCompat;
 import android.support.v4.widget.ViewDragHelper;
 import android.util.AttributeSet;
@@ -35,7 +36,7 @@ public class OuterLayout extends LinearLayout {
     /**
      * 关闭窗口的下拉比例
      */
-    private float radio = 0.5f;
+    private float radio;
 
     public OuterLayout(Context context) {
         this(context, null);
@@ -49,6 +50,13 @@ public class OuterLayout extends LinearLayout {
         super(context, attrs, defStyleAttr);
         outerLayout = this;
         this.context = context;
+        init(context, attrs);
+    }
+
+    private void init(Context context, AttributeSet attrs) {
+        TypedArray a = context.obtainStyledAttributes(attrs, R.styleable.dray_scrollview);
+        radio = a.getFloat(R.styleable.dray_scrollview_dray_radio, 0.5f);
+        a.recycle();
     }
 
     @Override
