@@ -3,11 +3,9 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/DragScrollView.iml" filepath="$PROJECT_DIR$/DragScrollView.iml" />
-      <module fileurl="file://E:\AndroidStudioProjects\DragScrollView\DragScrollView.iml" filepath="E:\AndroidStudioProjects\DragScrollView\DragScrollView.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
       <module fileurl="file://E:\AndroidStudioProjects\DragScrollView\app\app.iml" filepath="E:\AndroidStudioProjects\DragScrollView\app\app.iml" />
       <module fileurl="file://$PROJECT_DIR$/draglibrary/draglibrary.iml" filepath="$PROJECT_DIR$/draglibrary/draglibrary.iml" />
-      <module fileurl="file://E:\AndroidStudioProjects\DragScrollView\draglibrary\draglibrary.iml" filepath="E:\AndroidStudioProjects\DragScrollView\draglibrary\draglibrary.iml" />
     </modules>
   </component>
 </project>
