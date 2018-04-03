@@ -15,7 +15,7 @@ public class DragHelperCallBack extends ViewDragHelper.Callback {
 
     @Override
     public boolean tryCaptureView(View child, int pointerId) {
-        return child == parent.getChildAt(0);
+        return true;
     }
 
     @Override
@@ -36,9 +36,9 @@ public class DragHelperCallBack extends ViewDragHelper.Callback {
 
     @Override
     public void onViewReleased(View releasedChild, float xvel, float yvel) {
-        if (releasedChild == parent.getChildAt(0)) {
+//        if (releasedChild == parent) {
             parent.closeDown(releasedChild.getTop());
-        }
+//        }
         super.onViewReleased(releasedChild, xvel, yvel);
     }
 }
